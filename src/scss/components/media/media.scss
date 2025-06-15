@@ -1,0 +1,25 @@
+@use '../../tokens/variables.scss' as *;
+
+.adaptive__burger {
+  display: none;
+}
+
+@media (max-width: 1605px) {
+  .adaptive__wrapper {
+    background-color: $gray800;
+    background-image: url('/src/assets/images/bg-dots.png');
+    background-repeat: repeat;
+  }
+  .adaptive__none {
+    display: none;
+  }
+  .adaptive__burger {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .adaptive__wrapper {
+    background-image: none;
+  }
+}
